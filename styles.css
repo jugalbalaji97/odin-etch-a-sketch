@@ -1,7 +1,7 @@
 .grid-cell {
     border-width: 0px 1px 1px 0px;
     border-style: solid;
-    border-color: gray;
+    border-color: black;
     aspect-ratio: 1;
     flex-grow: 1;
 }
