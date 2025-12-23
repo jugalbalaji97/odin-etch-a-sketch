@@ -12,13 +12,12 @@ function colorCell(event) {
         }        
     }
     else {
-
         let red = Math.round(Math.random() * 255);
         let green = Math.round(Math.random() * 255);
         let blue = Math.round(Math.random() * 255);
+        event.target.style.backgroundColor = `rgba(${red}, ${green}, ${blue}, 0.1)`;
 
         event.target.dataset.colored = 1;
-        event.target.style.backgroundColor = `rgba(${red}, ${green}, ${blue}, 0.1)`;
     }
 }
 
@@ -27,7 +26,6 @@ function generateGrid(gridSize=16) {
         let gridRow = document.createElement("div");
         gridRow.classList.add("grid-row");
         for (let j=0; j < gridSize; j++){
-
             let gridCell = document.createElement("div");
             gridCell.classList.add("grid-cell");
             gridCell.dataset.colored = 0;
