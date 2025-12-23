@@ -1,0 +1,30 @@
+.grid-cell {
+    border-width: 0px 1px 1px 0px;
+    border-style: solid;
+    border-color: gray;
+    aspect-ratio: 1;
+    flex-grow: 1;
+}
+
+.grid-row {
+    display: flex;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: black;
+    max-width: 540px;
+    min-width: 270px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#selectGridSizeButton {
+    margin: 16px auto 16px auto;
+    display: block;
+}
